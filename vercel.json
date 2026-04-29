@@ -1,5 +1,0 @@
-{
-  "buildCommand": "quarto render",
-  "outputDirectory": "_site",
-  "installCommand": "quarto install tinytex --no-prompt || true"
-}

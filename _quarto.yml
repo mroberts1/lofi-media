@@ -4,7 +4,7 @@ project:
 website:
   title: "lofi-media"
   description: "A blog built with Quarto"
-  site-url: https://lofi-media.vercel.app
+  site-url: https://mroberts1.github.io/lofi-media
   navbar:
     background: dark
     right:
