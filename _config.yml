@@ -1,0 +1,23 @@
+title: lofi-media
+description: >-
+  A blog about lo-fi culture, media, and aesthetics.
+baseurl: "/lofi-media"
+url: "https://mroberts1.github.io"
+
+author: Martin Roberts
+email: mroberts1@gmail.com
+
+permalink: /:year/:month/:day/:title/
+
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "*.gemspec"
+  - README.md
