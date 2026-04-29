@@ -1,0 +1,214 @@
+/*-- scss:defaults --*/
+
+// EGA color palette
+$black:         #000000;
+$blue:          #0000aa;
+$green:         #00aa00;
+$cyan:          #00aaaa;
+$red:           #aa0000;
+$magenta:       #aa00aa;
+$brown:         #aa5500;
+$gray-light:    #aaaaaa;
+$gray-dark:     #555555;
+$blue-bright:   #5555ff;
+$green-bright:  #55ff55;
+$cyan-bright:   #55ffff;
+$red-bright:    #ff5555;
+$magenta-bright:#ff55ff;
+$yellow:        #ffff55;
+$white:         #ffffff;
+
+// Bootstrap overrides
+$body-bg:               $blue;
+$body-color:            $white;
+$link-color:            $yellow;
+$link-hover-color:      $cyan-bright;
+
+$font-family-sans-serif: "DOS", Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-monospace:  "DOS", Monaco, Menlo, Consolas, "Courier New", monospace;
+$font-family-base:       "DOS", Monaco, Menlo, Consolas, "Courier New", monospace;
+
+$font-size-base:    1rem;
+$line-height-base:  1.5;
+
+// Flatten heading hierarchy (all same size, like the 386 theme)
+$h1-font-size:  $font-size-base;
+$h2-font-size:  $font-size-base;
+$h3-font-size:  $font-size-base;
+$h4-font-size:  $font-size-base;
+$h5-font-size:  $font-size-base;
+$h6-font-size:  $font-size-base;
+
+$headings-font-weight:  normal;
+$headings-color:        $yellow;
+
+// Navbar
+$navbar-dark-color:             $white;
+$navbar-dark-hover-color:       $yellow;
+$navbar-dark-active-color:      $yellow;
+$navbar-bg:                     $black;
+
+// Cards / panels
+$card-bg:               $black;
+$card-border-color:     $gray-light;
+$card-color:            $white;
+
+// Code
+$code-color:            $green-bright;
+$code-bg:               $black;
+$pre-color:             $green-bright;
+
+// Borders
+$border-color:          $gray-light;
+
+// Input / forms
+$input-bg:              $black;
+$input-color:           $white;
+$input-border-color:    $gray-light;
+
+// Primary/secondary semantic colors
+$primary:   $cyan;
+$secondary: $gray-dark;
+$success:   $green;
+$info:      $cyan-bright;
+$warning:   $yellow;
+$danger:    $red-bright;
+
+/*-- scss:rules --*/
+
+@font-face {
+  font-family: "DOS";
+  src: url("fonts/Fixedsys500c.woff") format("woff"),
+       url("fonts/Fixedsys500c.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: $blue;
+  color: $white;
+  font-family: "DOS", Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+
+/* Navbar */
+.navbar {
+  background-color: $black !important;
+  border-bottom: 1px solid $gray-light;
+  font-family: inherit;
+}
+
+.navbar-brand {
+  color: $yellow !important;
+}
+
+.nav-link {
+  color: $white !important;
+  &:hover { color: $yellow !important; }
+}
+
+/* Title block */
+.quarto-title h1.title {
+  color: $yellow;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+/* Post listings */
+.listing-title a {
+  color: $yellow;
+  text-decoration: none;
+  &:hover { color: $cyan-bright; text-decoration: underline; }
+}
+
+.listing-description,
+.listing-date,
+.listing-author {
+  color: $gray-light;
+}
+
+/* Category / tag badges */
+.quarto-category {
+  background-color: $gray-dark;
+  color: $white;
+  border: 1px solid $gray-light;
+}
+
+/* Post metadata */
+.quarto-title-meta-contents {
+  color: $gray-light;
+}
+
+/* Code blocks */
+pre, code {
+  background-color: $black;
+  color: $green-bright;
+  border: 1px solid $gray-dark;
+  font-family: inherit;
+}
+
+pre.sourceCode {
+  background-color: $black;
+  border: 1px solid $gray-light;
+}
+
+div.sourceCode {
+  background-color: $black;
+}
+
+/* Sidebar / TOC */
+#quarto-sidebar,
+#TOC {
+  background-color: $black;
+  border-right: 1px solid $gray-light;
+  color: $white;
+}
+
+/* Footer */
+.nav-footer {
+  background-color: $black;
+  border-top: 1px solid $gray-light;
+  color: $gray-light;
+}
+
+/* Horizontal rules as ASCII-style separators */
+hr {
+  border-color: $gray-light;
+  border-style: solid;
+  border-width: 1px 0 0 0;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid $cyan;
+  color: $cyan-bright;
+  background-color: $black;
+  padding: 0.5rem 1rem;
+}
+
+/* Tables */
+table {
+  color: $white;
+  border-color: $gray-light;
+}
+
+thead {
+  background-color: $black;
+  color: $yellow;
+}
+
+tbody tr:nth-child(even) {
+  background-color: rgba(85, 85, 85, 0.3);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; background: $black; }
+::-webkit-scrollbar-thumb { background: $gray-dark; }
+::-webkit-scrollbar-track { background: $black; }
+
+/* About page */
+.about-entity .about-links a {
+  color: $yellow;
+  border: 1px solid $gray-light;
+  background-color: $black;
+  &:hover { background-color: $gray-dark; }
+}

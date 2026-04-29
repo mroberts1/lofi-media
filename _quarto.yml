@@ -1,0 +1,22 @@
+project:
+  type: website
+
+website:
+  title: "lofi-media"
+  description: "A blog built with Quarto"
+  site-url: https://lofi-media.vercel.app
+  navbar:
+    background: dark
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+  favicon: ""
+
+format:
+  html:
+    theme: 386.scss
+    highlight-style: base16-dark
+    code-block-bg: "#000000"
+    code-block-border-left: "#00aa00"
+    toc: true
