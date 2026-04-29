@@ -21,3 +21,4 @@ exclude:
   - Gemfile.lock
   - "*.gemspec"
   - README.md
+  - vendor/
